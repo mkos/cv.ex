@@ -13,4 +13,4 @@ computer vision exercises
 
 * run with
 
-    ./cvex <some_picture>
+    ./cvex some_picture
