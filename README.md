@@ -8,8 +8,8 @@ computer vision exercises
     sudo apt-get install libopencv-dev
 
 * compile example with:
-    
-    g++ -Wall -g -o cvex cvex.cpp -lopencv_highgui -lopencv_core
+ 
+	make
 
 * run with
 
