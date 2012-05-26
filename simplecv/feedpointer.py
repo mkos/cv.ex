@@ -4,20 +4,27 @@ print __doc__
 
 from SimpleCV import Display, Camera, Color
 
+# initialization #
+
 cam = Camera()
 disp = Display()
 
+# settings #
+
+rad = 30
+offset = 50
+thick = 2
+length = 60
+font = 24
+spacing = -4
+color = Color.WHITE
+
+# main loop #
+
 while not disp.isDone():
-    
+
     px = disp.mouseX
     py = disp.mouseY
-    rad = 30
-    offset = 50
-    thick = 2
-    length = 60
-    font = 24
-    spacing = -4
-    color = Color.WHITE
 
     img = cam.getImage()
 
