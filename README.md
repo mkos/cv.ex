@@ -10,3 +10,5 @@ basic tests using SimpleCV
 # opencv/
 
 basic tests using OpenCV
+
+* `basic.cpp` - basic test to check installation of OpenCV, displays photo from cmdline

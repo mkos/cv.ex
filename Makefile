@@ -4,7 +4,12 @@ CCFLAGS=-Wall
 GCC=g++
 OCVDIR=opencv
 
-cvex: ${OCVDIR}/cvex.cpp
+basic: ${OCVDIR}/basic.cpp
 	$(GCC) ${CCFLAGS} ${CCLIBS} $^ -o ${RELDIR}/$@
+
+clean:
+	rm ${RELDIR}/*
+
+.phony: clean
 
 all: cvex
