@@ -1,16 +1,12 @@
-cvex
-====
+# simplecv/
 
-computer vision exercises
+basic tests using SimpleCV
 
-* setting up environment - ubuntu
-    
-    sudo apt-get install libopencv-dev
+* `camfeed.py` - show coordinates on the picture under the pointer on the mouse button click
+* `campic.py` - make a snapshot photo with the camera
+* `feedpointer.py` - shows simple pointer and updates coordinates on it
+* `feedzoom.py` - zooms selected part of the picture
 
-* compile example with:
- 
-	make
+# opencv/
 
-* run with
-
-    ./cvex some_picture
+basic tests using OpenCV

@@ -1,9 +1,10 @@
-LIBS=-lopencv_highgui -lopencv_core
-BINDIR=bin
+CCLIBS=-lopencv_highgui -lopencv_core
+RELDIR=bin
 CCFLAGS=-Wall
-CC=g++
+GCC=g++
+OCVDIR=opencv
 
-cvex: cvex.cpp
-	${CC} ${CFLAGS} cvex.cpp -o ${BINDIR}/cvex ${LIBS}
+cvex: ${OCVDIR}/cvex.cpp
+	$(GCC) ${CCFLAGS} ${CCLIBS} $^ -o ${RELDIR}/$@
 
 all: cvex
